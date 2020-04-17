@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:width="200dp"
+        android:height="50dp"
+        android:background="#9996A8"
+        android:backgroundTint="#00D61515"
+        android:hint="Enter a number"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textCursorDrawable="@null"
+        android:textSize="25sp"></EditText>
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:width="200dp"
+        android:height="50dp"
+        android:background="#ADB9B2"
+        android:backgroundTint="#009C3434"
+        android:hint="Enter a number"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:shadowColor="#D89D13"
+        android:textAlignment="center"
+        android:textCursorDrawable="@null"
+        android:textSize="25sp"></EditText>
+
+    <Button
+        android:id="@+id/sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sum"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="handle"
+        ></Button>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        ></TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/onion"
+        android:scaleType="center"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+
+        ></ImageView>
+
+
+</LinearLayout>

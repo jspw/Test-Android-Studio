@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/login"
+        android:onClick="handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        ></Button>
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:onClick="handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bal"
+        android:textSize="20dp"
+        ></CheckBox>
+
+    <CheckBox
+        android:onClick="handle"
+        android:id="@+id/cb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sal"
+        android:textSize="20dp"
+        ></CheckBox>
+
+    <CheckBox
+        android:id="@+id/cb3"
+        android:onClick="handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mal"
+        android:textSize="20dp"
+        ></CheckBox>
+
+    <CheckBox
+        android:id="@+id/cb4"
+        android:onClick="handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kal"
+        android:textSize="20dp"
+        ></CheckBox>
+
+    <Button
+        android:id="@+id/button"
+        android:onClick="handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        android:textStyle="bold"
+        android:textSize="25dp"
+
+        ></Button>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        ></TextView>
+
+
+    <RadioGroup
+        android:id="@+id/rd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:id="@+id/r1"
+            android:onClick="handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bal"
+            android:textSize="20dp"
+            ></RadioButton>
+
+        <RadioButton
+            android:id="@+id/r2"
+            android:onClick="handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sal"
+            android:textSize="20dp"
+            ></RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonR"
+        android:onClick="handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select"
+        android:textStyle="bold"
+        android:textSize="25dp"
+
+        ></Button>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        ></TextView>
+
+
+
+
+</LinearLayout>

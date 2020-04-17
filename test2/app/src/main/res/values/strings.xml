@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="name">Enter your name</string>
+    <string name="submit">Submit</string>
+    <string name="button">Click To Chnage Image</string>
+    <string name="todo">TODO</string>
+</resources>

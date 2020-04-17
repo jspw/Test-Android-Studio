@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Button</string>
+    <string name="buton_name">Login</string>
+    <string name="pera">
+        Over the past 6 months, I’ve been working on a programming language called Pinecone. I wouldn’t call it mature yet, but it already has enough features working to be usable, such as:
+
+variables
+functions
+user defined structures
+If you’re interested in it, check out Pinecone’s landing page or its GitHub repo.
+
+I’m not an expert. When I started this project, I had no clue what I was doing, and I still don’t. I’ve taken zero classes on language creation, read only a bit about it online, and did not follow much of the advice I have been given.
+
+And yet, I still made a completely new language. And it works. So I must be doing something right.
+
+In this post, I’ll dive under the hood and show you the pipeline Pinecone (and other programming languages) use to turn source code into magic.
+
+I‘ll also touch on some of the tradeoffs I’ve had make, and why I made the decisions I did.
+
+This is by no means a complete tutorial on writing a programming language, but it’s a good starting point if you’re curious about language development.
+
+Getting Started
+“I have absolutely no idea where I would even start” is something I hear a lot when I tell other developers I’m writing a language. In case that’s your reaction, I’ll now go through some initial decisions that are made and steps that are taken when starting any new language.
+
+Compiled vs Interpreted
+There are two major types of languages: compiled and interpreted:
+
+A compiler figures out everything a program will do, turns it into “machine code” (a format the computer can run really fast), then saves that to be executed later.
+An interpreter steps through the source code line by line, figuring out what it’s doing as it goes.
+Technically any language could be compiled or interpreted, but one or the other usually makes more sense for a specific language. Generally, interpreting tends to be more flexible, while compiling tends to have higher performance. But this is only scratching the surface of a very complex topic.
+
+I highly value performance, and I saw a lack of programming languages that are both high performance and simplicity-oriented, so I went with compiled for Pinecone.
+
+This was an important decision to make early on, because a lot of language design decisions are affected by it (for example, static typing is a big benefit to compiled languages, but not so much for interpreted ones).
+
+Despite the fact that Pinecone was designed with compiling in mind, it does have a fully functional interpreter which was the only way to run it for a while. There are a number of reasons for this, which I will explain later on.
+
+Choosing a Language
+I know it’s a bit meta, but a programming language is itself a program, and thus you need to write it in a language. I chose C++ because of its performance and large feature set. Also, I actually do enjoy working in C++.
+
+If you are writing an interpreted language, it makes a lot of sense
+    </string>
+</resources>
