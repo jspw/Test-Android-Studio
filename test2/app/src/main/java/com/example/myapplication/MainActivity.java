@@ -32,8 +32,36 @@ public class MainActivity extends AppCompatActivity {
 
     public void animateup(View view){
         ImageView img = findViewById(R.id.img2);
-        img.animate().translationY(-500f).setDuration(1000);
+        img.animate().translationXBy(500f).setDuration(2000);
 
+    }
+
+    public void animatex(View view){
+        ImageView img = findViewById(R.id.img2);
+        img.animate().translationXBy(-500f).setDuration(2000);
+    }
+
+    public void rotate(View view){
+        ImageView img = findViewById(R.id.img2);
+        img.animate().rotationBy(360f).setDuration(3000);
+    }
+
+    public void scale(View view){
+        ImageView img = findViewById(R.id.imageView);
+        img.animate().alpha(1f).setDuration(1000);
+        img.animate().scaleX(0.5f).scaleY(0.5f).setDuration(2000);
+    }
+
+    public void all(View view){
+        ImageView img = findViewById(R.id.img2);
+        img.animate()
+                .translationXBy(100f)
+                .translationYBy(150f)
+                .scaleXBy(1.5f)
+                .scaleY(1.3f)
+                .rotationBy(360f)
+                .alpha(0.5f)
+                .setDuration(5000);
     }
 
     @Override
